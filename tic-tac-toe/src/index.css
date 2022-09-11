@@ -1,12 +1,15 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
   }
   
   ol, ul {
     padding-left: 30px;
   }
   
+  .square-text {
+    font-size: 40px;
+  }
+
   .board-row:after {
     clear: both;
     content: "";
@@ -24,12 +27,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 100px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 100px;
   }
   
   .square:focus {
@@ -42,9 +45,23 @@ body {
   
   .game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
   }
   
+  p {
+      margin-top: -10px;
+  }
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px black;
+    padding: 10px;
+}
+
   .game-info {
     margin-left: 20px;
   }  

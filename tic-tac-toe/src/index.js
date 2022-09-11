@@ -5,7 +5,7 @@ import './index.css';
 function Square(props) {
     return (
       <button className="square" onClick={props.onClick}>
-        {props.value}
+        <div class="square-text">{props.value}</div>
       </button>
     );
   }
@@ -104,6 +104,9 @@ function Square(props) {
   
       return (
         <div className="game">
+            <h1>Let's Play Tic-Tac-Toe!</h1>
+            <p>Click a square to make your move.</p>
+          <div className="game-container">
           <div className="game-board">
             <Board
               squares={current.squares}
@@ -113,6 +116,7 @@ function Square(props) {
           <div className="game-info">
             <div>{status}</div>
             <ol>{moves}</ol>
+          </div>
           </div>
         </div>
       );
